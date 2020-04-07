@@ -46,7 +46,7 @@ INSERT INTO `todo_db` (`todo_id`, `user_id`, `topic`, `detail`, `alert_datetime`
 -- Table structure for table `User_db`
 --
 
-CREATE TABLE `User_db` (
+CREATE TABLE `user_db` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(30) NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `User_db` (
 -- Dumping data for table `User_db`
 --
 
-INSERT INTO `User_db` (`id`, `username`, `password`, `name`, `email`, `tel`, `create_at`, `postion`) VALUES
+INSERT INTO `user_db` (`id`, `username`, `password`, `name`, `email`, `tel`, `create_at`, `postion`) VALUES
 (1, 'kimhun55', '1150', 'kimhu55', 'kimhun55@gmail.com', '0815575706', '2020-04-07 00:00:00', 1);
 
 --

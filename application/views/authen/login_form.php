@@ -30,7 +30,9 @@
 <body>
     <div class="container">
 
-        <?php if($_SERVER['HTTP_REFERER'] == site_url('user/save')){ ?>
+        <?php
+        if(isset($_SERVER['HTTP_REFERER'])){ 
+        if($_SERVER['HTTP_REFERER'] == site_url('user/save')){ ?>
         <?php 
         // echo $_SERVER['HTTP_REFERER'] ."<br>";
         // echo site_url('user/save');
@@ -42,7 +44,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-    <?php }
+    <?php } }
         ?>
 
     <?php echo validation_errors(); ?>
